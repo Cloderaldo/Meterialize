@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Photo Ninja</title>
+  <style>
+      header{
+        background: url(img/man.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+   
+      }
+      @media screen and (max-width: 670px){
+        header{
+          min-height: 500px;
+        }
+      }
+
+      .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+
+      .tabs .indicator{
+        background-color:indigo;
+      }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+              <!-- logo -->
+              <a href="#" class="brand-logo">CLODE</a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="hide-on-med-and-down right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="" class="btn-floating btn-small indigo darken-4">
+                  <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="btn-floating btn-small indigo darken-4">
+                  <i class="fab fa-instagram"></i>
+                </a></li>
+              </ul>
+    
+              <!-- mobile navbar -->
+              <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+    
+          </nav>
+    </header>
+    
+  <!-- photo / grid -->
+    <section class="container section" id="photo's">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/portrait.jpg" alt="photo1" class="responsive-img material-boxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Portrait</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates recusandae blanditiis, reprehenderit debitis aut ducimus excepturi vitae sunt voluptate corrupti aperiam a quasi pariatur hic doloremque accusamus sapiente! Necessitatibus, rerum?</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col s12 l4 push-l7">
+            <img src="img/city.jpg" alt="photo1" class="responsive-img material-boxed">
+          </div>
+          <div class="col s12 l6 pull-l4">
+            <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates recusandae blanditiis, reprehenderit debitis aut ducimus excepturi vitae sunt voluptate corrupti aperiam a quasi pariatur hic doloremque accusamus sapiente! Necessitatibus, rerum?</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+              <img src="img/nature.jpg" alt="photo1" class="responsive-img material-boxed">
+            </div>
+            <div class="col s12 l6">
+              <h2 class="indigo-text text-darken-4">Natures</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates recusandae blanditiis, reprehenderit debitis aut ducimus excepturi vitae sunt voluptate corrupti aperiam a quasi pariatur hic doloremque accusamus sapiente! Necessitatibus, rerum?</p>
+            </div>
+          </div>
+    </section>
+  <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="streets" class="responsive-img">
+      </div>
+
+    </div>
+  <!-- services / tabs -->
+  <section class="container section">
+      <div class="row">
+        <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-3">What I do...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor minima facere accusamus vitae nisi a repellendus quod ullam neque non corrupti architecto inventore, nesciunt deleniti autem nihil ut omnis. </p>      
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col l6">
+              <a href="#p" class="indigo-text">Photography</a>
+            </li>
+            <li class="tab col l6">
+                <a href="#e" class="indigo-text">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12"  id="p">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPGY</p>
+            <p>PHOTO ipsum dolor sit amet consectetur, adipisicing elit. Ex tenetur nisi exercitationem, neque expedita corrupti magnam illo voluptatum, placeat aspernatur blanditiis? Ab amet cum saepe iure autem consectetur, at aliquam.</p>
+          </div>
+          <div class="col s12" id="e">
+              <p class="flow-text indigo-text text-darken-4" >EDITING</p>
+              <p>EDIT ipsum dolor sit amet consectetur, adipisicing elit. Ex tenetur nisi exercitationem, neque expedita corrupti magnam illo voluptatum, placeat aspernatur blanditiis? Ab amet cum saepe iure autem consectetur, at aliquam.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/stars.jpg" alt="stars" class="responsive-img" >
+      </div>
+    </div>
+  <!-- contact form -->
+  <section class="container section" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-3">Contact Me...</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime perferendis molestias dignissimos similique? Consequatur ducimus dolorem officia id, odio rem? Id nam aliquam quia provident a fugiat ab asperiores?</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+           <form action="">
+             <div class="input-field">
+               <i class="material-icons prefix">email</i>
+               <input type="email" id="email">
+               <label for="email">Email Address</label>
+             </div>
+             <div class="input-field">
+               <i class="material-icons prefix">message</i>
+               <input type="password" id="password">
+               <label for="password">Password</label>
+             </div>
+             <div class="input-field date-picker">
+               <input type="text" id="date"">
+               <label for="data">Coose a date</label>
+             </div>
+           </form>
+        </div>
+    </div>
+    
+  </section>
+  <!-- footer -->
+
+  <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h5>About Me</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nesciunt numquam tenetur quia officia, hic, impedit debitis facilis cum corrupti explicabo provident! Tempora ea accusantium facere totam maxime recusandae porro?</p>
+          </div>
+          <div class="col s12 l4 offset-l2">
+              <h5>Sociak Media</h5>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Github</a></li>
+              </ul>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; Cloderaldo</div>
+      </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.material-boxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.date-picker').datepicker({
+
+      });
+    });
+  </script>
+</body>
+</html>
